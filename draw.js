@@ -1,5 +1,6 @@
 const canvas = document.getElementById("drawingboard");
-const brush = document.getElementById("brush");
+
+
 // const eraser = document.getElementById("eraser");
 const ctx = canvas.getContext("2d");
 
@@ -107,7 +108,7 @@ const draw = (e) => {
 
 canvas.addEventListener("mousemove", draw);
 
-// brush.addEventListener("click", e => {
+// .addEventListener("click", e => {
 
 //     if(e.currentTarget.id === "orange"){
 //         ctx.strokeStyle = "#d45500";
@@ -143,7 +144,7 @@ canvas.addEventListener("mouseup", (e) => {
     ctx.beginPath();
 });
 
-// brush.addEventListener("mousedown", (e) => {
+// .addEventListener("mousedown", (e) => {
 //     ctx.strokeStyle = e.target.value;
 //     isPaintingM = true;
 //     startX = e.clientX;
@@ -160,7 +161,7 @@ canvas.addEventListener("mouseup", (e) => {
 
 
 
-//brush.addEventListener("mousemove", draw);
+//.addEventListener("mousemove", draw);
 //eraser.addEventListener("mousemove", draw);
 
 
@@ -175,19 +176,13 @@ canvas.addEventListener("mouseup", (e) => {
 //     console.log("Move");
 // });
 
-// brush.addEventListener("touchstart", (e) => {
+// .addEventListener("touchstart", (e) => {
 //     ctx.strokeStyle = "#d45500";
 //     lineWidth = 48;
 
 // });
 
 canvas.addEventListener("touchmove", draw);
-
-brush.addEventListener("touchstart", (e) => {
-   
-    
-});
-
 canvas.addEventListener("touchstart", (e) => {
     isPaintingT = true;
     startX = e.touches[0].clientX;
