@@ -1,5 +1,5 @@
 const container = document.getElementById("flex-container");
-title = ["d","e","r","n","t","p","a","c",".","c","o","m"];
+title = ["d","e","r","p","a","c",".","c","o","m","","i","s","","d","o","w","n"];
 const weirdCharacters = "!@#$%^&*()_+-=<>?[]{}|~><.,derpac";
 
 function getRandomCharacter() {
