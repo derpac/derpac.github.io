@@ -202,22 +202,3 @@ canvas.addEventListener("touchend", (e) => {
 });
 
 
-
-function orange(){
-ctx.strokeStyle = "#d45500";
-}
-
-function eraser(){
-    ctx.strokeStyle =  "#fefefe";
-}
-
-function bloodorange(){
-    ctx.strokeStyle =  "#ff3e31";
-}
-function lime(){
-    ctx.strokeStyle = "#44aa00";
-}
-
-function lemon(){
-    ctx.strokeStyle = "#ffcc00";
-}
