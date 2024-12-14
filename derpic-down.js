@@ -1,6 +1,6 @@
 const container = document.getElementById("flex-container");
 title = ["d","e","r","n","t","p","a","c",".","c","o","m"];
-const weirdCharacters = "!@#$%^&*()_+-=<>?[]{}|~><.,tidbit";
+const weirdCharacters = "!@#$%^&*()_+-=<>?[]{}|~><.,derpac";
 
 function getRandomCharacter() {
     return weirdCharacters[Math.floor(Math.random() * weirdCharacters.length)];
