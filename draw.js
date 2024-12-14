@@ -3,6 +3,40 @@ const brush = document.getElementById("brush");
 // const eraser = document.getElementById("eraser");
 const ctx = canvas.getContext("2d");
 
+
+// derpacdown code ---------------------------------
+
+const container = document.getElementById("flex-container");
+title = ["d","e","r","p","a","c",".","c","o","m","","i","s","","d","o","w","n"];
+const weirdCharacters = "!@#$%^&*()_+-=<>?[]{}|~><.,derpac";
+
+function getRandomCharacter() {
+    return weirdCharacters[Math.floor(Math.random() * weirdCharacters.length)];
+}
+
+for(let i = 0; i < title.length; i++){
+    let letter = document.createElement("h1");
+    letter.id = (i);
+    letter.className = "letter";
+    letter.textContent = title[i] === "" ? '\u00A0' : title[i];
+    container.appendChild(letter);
+
+    letter.addEventListener('mouseover', function() {
+        this.originalText = this.textContent;  // Store the original text
+        this.textContent = getRandomCharacter();
+    });
+
+}
+
+
+
+
+//---------------------------------
+
+
+
+
+
 // vertical and horizontal offsets:
 // these should be 0
 const canvasOffsetX = canvas.offsetLeft;
